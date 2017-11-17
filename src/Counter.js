@@ -23,7 +23,8 @@ export default class Counter extends Component {
     while (this.steps > 0) {
       await delay(1000);
       this.steps--;
-      this.updateUI();
+      this.updateUI(() => console.log("update callback: step ", this.steps));
+      console.log("incrementAsync: step ", this.steps);
     }
     this.count++;
     this.updateUI();
