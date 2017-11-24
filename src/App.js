@@ -1,6 +1,6 @@
 /* @jsx h */
 import { h } from "petit-dom";
-import Component from "./component";
+import Component from "./Component";
 import Counter from "./Counter";
 
 class App extends Component {
